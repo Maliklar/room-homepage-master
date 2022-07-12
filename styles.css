@@ -7,7 +7,7 @@
 }
 
 * {
-    box-sizing: content-box;
+    box-sizing: border-box;
 }
 
 html {
@@ -28,7 +28,6 @@ main {
 }
 
 .slider {
-    background-color: rebeccapurple;
     grid-column: 1 /-1;
     display: flex;
 }
@@ -43,9 +42,35 @@ main {
 }
 
 .slider-right {
-    background-color: pink;
     flex-basis: 41.5%;
     position: relative;
+}
+
+.slider-right-content {
+    height: 100%;
+    width: 100%;
+    padding: 10.21em 8.4em;
+}
+
+.shop-now {
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 0.75em;
+    margin-top: 1.5em;
+}
+
+.slider-title {
+    font-size: 3.67rem;
+    font-weight: 700;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.slider-content {
+    color: var(--DarkGray);
+    font-size: 1.3rem;
+    line-height: 1.4em;
 }
 
 .slider-contorller {
@@ -64,7 +89,19 @@ main {
 }
 
 .center {
-    background-color: yellowgreen;
+    padding: 4em 3.9em;
+}
+
+.center-title {
+    font-size: 1.4rem;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+}
+
+.center-content {
+    color: var(--DarkGray);
+    font-size: 1.3rem;
+    line-height: 1.4em;
 }
 
 .right {
