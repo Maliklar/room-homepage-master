@@ -14,8 +14,16 @@
 
 <body>
 
+    <div class="mobile drawer" id="drawer">
+        <img src="./images/icon-close.svg" onclick="closeDrawer()" alt="Close Icon">
+        <div class="nav-item">home</div>
+        <div class="nav-item">shop</div>
+        <div class="nav-item">about</div>
+        <div class="nav-item">contact</div>
+    </div>
     <header>
         <nav>
+            <img src="./images/icon-hamburger.svg" onclick="openDrawer()" alt="menu icon" class="mobile">
             <div class="nav-logo">
                 <img src="./images/logo.svg" alt="Room Logo">
             </div>
@@ -25,13 +33,20 @@
                 <div class="nav-item">about</div>
                 <div class="nav-item">contact</div>
             </div>
+
+
         </nav>
     </header>
 
     <main>
         <div class="slider">
             <div class="slider-left desktop"><img id="slider-image" src="./images/desktop-image-hero-1.jpg" alt="img"></div>
-            <div class="slider-left mobile"><img id="slider-image" src="./images/mobile-image-hero-1.jpg" alt="img"></div>
+            <div class="slider-left mobile"><img id="slider-image" src="./images/mobile-image-hero-1.jpg" alt="img">
+                <div class="slider-contorller mobile">
+                    <img src="./images/icon-angle-left.svg" onclick="prev()" alt="icon-angle-left">
+                    <img src="./images/icon-angle-right.svg" onclick="next()" alt="icon-angle-right">
+                </div>
+            </div>
             <div class="slider-right">
                 <div class="slider-right-content">
                     <h1 class="slider-title" id="slider-title">Discover innovative ways to decorate</h1>
@@ -41,7 +56,7 @@
                     </p>
                     <p class="shop-now">SHOP NOW <img src="./images/icon-arrow.svg" alt="Arrow"></p>
                 </div>
-                <div class="slider-contorller">
+                <div class="slider-contorller desktop">
                     <img src="./images/icon-angle-left.svg" onclick="prev()" alt="icon-angle-left">
                     <img src="./images/icon-angle-right.svg" onclick="next()" alt="icon-angle-right">
                 </div>

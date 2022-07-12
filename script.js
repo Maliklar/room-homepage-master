@@ -18,6 +18,7 @@ const content = [{
 const title = document.getElementById("slider-title");
 const body = document.getElementById("slider-content");
 const image = document.getElementById("slider-image");
+const drawer = document.getElementById("drawer");
 
 let curr = 0;
 
@@ -40,4 +41,17 @@ function prev() {
     title.innerText = content[curr].title;
     body.innerText = content[curr].body;
     image.setAttribute("src", content[curr].img);
+}
+drawer.style.display = "none";
+
+function openDrawer() {
+    if (drawer.style.display == "flex") {
+        drawer.style.display = "none";
+    } else {
+        drawer.style.display = "flex";
+    }
+}
+
+function closeDrawer() {
+    drawer.style.display = "none";
 }
