@@ -107,3 +107,128 @@ main {
 .right {
     background-color: blue;
 }
+
+header {
+    position: absolute;
+    left: 4.8%;
+    top: 66px;
+    color: var(--White);
+    font-size: 1.3rem;
+}
+
+nav {
+    display: flex;
+    gap: 56px;
+}
+
+.nav-list {
+    display: flex;
+    gap: 30px;
+}
+
+.mobile {
+    display: none;
+}
+
+.desktop {
+    display: block;
+}
+
+@media screen and (max-width: 500px) {
+    .mobile {
+        display: block;
+    }
+    .desktop {
+        display: none;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .slider {
+        flex-direction: column;
+        align-items: center;
+    }
+    .slider-left {
+        flex-basis: auto;
+    }
+    .slider-left>img {
+        width: 100%;
+        height: auto;
+    }
+    .slider-right {
+        width: auto;
+        flex-basis: auto;
+        position: static;
+    }
+    .slider-right-content {
+        height: 100%;
+        width: 100%;
+        padding: 1.21em 0.4em;
+    }
+    .shop-now {
+        font-size: 1.3rem;
+        font-weight: 600;
+        letter-spacing: 0.75em;
+        margin-top: 1.5em;
+    }
+    .slider-title {
+        font-size: 3.0rem;
+        font-weight: 700;
+        margin: default;
+    }
+    .slider-content {
+        color: var(--DarkGray);
+        font-size: 1.3rem;
+        line-height: 1.4em;
+    }
+    .slider-contorller {
+        height: 79px;
+        width: 158px;
+        bottom: 0;
+        position: absolute;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .left {
+        object-fit: cover;
+        width: 100%;
+    }
+    .left>img {
+        width: 100%;
+    }
+    .right>img {
+        width: 100%;
+    }
+    .center {
+        padding: 4em 3.9em;
+    }
+    .center-title {
+        font-size: 1.4rem;
+        letter-spacing: 0.4em;
+        text-transform: uppercase;
+    }
+    .center-content {
+        color: var(--DarkGray);
+        font-size: 1.3rem;
+        line-height: 1.4em;
+    }
+    header {
+        position: absolute;
+        left: 4.8%;
+        top: 66px;
+        color: var(--White);
+        font-size: 1.3rem;
+    }
+    nav {
+        display: flex;
+        gap: 56px;
+    }
+    .nav-list {
+        display: none;
+        gap: 30px;
+    }
+}

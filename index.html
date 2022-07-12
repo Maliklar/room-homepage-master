@@ -14,10 +14,24 @@
 
 <body>
 
+    <header>
+        <nav>
+            <div class="nav-logo">
+                <img src="./images/logo.svg" alt="Room Logo">
+            </div>
+            <div class="nav-list">
+                <div class="nav-item">home</div>
+                <div class="nav-item">shop</div>
+                <div class="nav-item">about</div>
+                <div class="nav-item">contact</div>
+            </div>
+        </nav>
+    </header>
 
     <main>
         <div class="slider">
-            <div class="slider-left"><img id="slider-image" src="./images/desktop-image-hero-1.jpg" alt="img"></div>
+            <div class="slider-left desktop"><img id="slider-image" src="./images/desktop-image-hero-1.jpg" alt="img"></div>
+            <div class="slider-left mobile"><img id="slider-image" src="./images/mobile-image-hero-1.jpg" alt="img"></div>
             <div class="slider-right">
                 <div class="slider-right-content">
                     <h1 class="slider-title" id="slider-title">Discover innovative ways to decorate</h1>
@@ -28,8 +42,8 @@
                     <p class="shop-now">SHOP NOW <img src="./images/icon-arrow.svg" alt="Arrow"></p>
                 </div>
                 <div class="slider-contorller">
-                    <img src="./images/icon-angle-left.svg" onclick="next()" alt="icon-angle-left">
-                    <img src="./images/icon-angle-right.svg" onclick="prev()" alt="icon-angle-right">
+                    <img src="./images/icon-angle-left.svg" onclick="prev()" alt="icon-angle-left">
+                    <img src="./images/icon-angle-right.svg" onclick="next()" alt="icon-angle-right">
                 </div>
             </div>
         </div>

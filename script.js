@@ -23,24 +23,21 @@ let curr = 0;
 
 function next() {
     curr++;
-    if (curr > 2) {
+    if (curr > 2)
         curr = 0;
-    }
 
     title.innerText = content[curr].title;
     body.innerText = content[curr].body;
-
     image.setAttribute("src", content[curr].img);
 
 }
 
 function prev() {
     curr--;
-    if (curr < 0) {
+    if (curr < 0)
         curr = 2;
-    }
+
     title.innerText = content[curr].title;
     body.innerText = content[curr].body;
-
     image.setAttribute("src", content[curr].img);
 }
