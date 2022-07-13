@@ -22,7 +22,7 @@ body {
 
 main {
     display: grid;
-    height: 100vh;
+    min-height: 100vh;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 67% 33%;
 }
@@ -126,7 +126,33 @@ nav {
     display: block;
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1300px) {
+    .slider-left {
+        flex-basis: auto;
+        object-fit: cover;
+    }
+    .slider-right {
+        flex-basis: auto;
+        position: relative;
+    }
+    .slider-right-content {
+        height: 100%;
+        width: 100%;
+        padding: 2.21em 2.4em;
+    }
+    .center {
+        grid-area: 2 / -1;
+    }
+    .left {
+        visibility: hidden;
+    }
+    main {
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: auto;
+    }
+}
+
+@media screen and (max-width: 750px) {
     .mobile {
         display: block;
     }
